@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Minimalistic WebApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button onclick="loadImage()">Load Image</button>
+            <button onclick="showMessage('Button 1 Clicked')">Button 1</button>
+            <button onclick="showMessage('Button 2 Clicked')">Button 2</button>
+        </div>
+        <div class="main-content">
+            <div class="image-box">
+                <img id="displayImage" src="" alt="Your Image Will Appear Here" class="hidden">
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="imageLoader" style="display: none;" onchange="handleImage(event)"/>
+    <script src="script.js"></script>
+</body>
+</html>
